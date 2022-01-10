@@ -18,15 +18,15 @@
             android:id="@+id/question"
             android:layout_width="325dp"
             android:layout_height="107dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="28dp"
             android:freezesText="false"
             android:text="TextView"
             android:textColor="#161A35"
             android:textSize="22sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.162"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textView7"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="@+id/textView7"
             app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
         <TextView
@@ -39,7 +39,6 @@
             android:textSize="16sp"
             android:textStyle="normal"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.132"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -47,24 +46,35 @@
             android:id="@+id/answer"
             android:layout_width="236dp"
             android:layout_height="60dp"
-            android:layout_marginTop="28dp"
+            android:layout_marginTop="24dp"
             android:ems="10"
             android:hint="Enter your answer here"
             android:inputType="number|numberDecimal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.136"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/question"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="@+id/question"
             app:layout_constraintTop_toBottomOf="@+id/question" />
 
         <Button
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="48dp"
             android:text="Submit"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.21"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/answer"
+            app:layout_constraintTop_toBottomOf="@+id/answer" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:text="mark"
+            app:layout_constraintEnd_toEndOf="@+id/answer"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/button"
             app:layout_constraintTop_toBottomOf="@+id/answer" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
