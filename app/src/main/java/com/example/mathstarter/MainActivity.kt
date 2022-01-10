@@ -1,11 +1,24 @@
 package com.example.mathstarter
 
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
+import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
+
+import com.example.mathstarter.*
+
+
+
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.Toast
+
 
 
 class MainActivity : AppCompatActivity() {
@@ -24,6 +37,8 @@ class MainActivity : AppCompatActivity() {
 
         val divi_1 : ImageView = findViewById(R.id.division)
         val divi_2 : Button = findViewById(R.id.divi)
+
+
 
         val practice : Button = findViewById(R.id.practice)
 
@@ -73,11 +88,11 @@ class MainActivity : AppCompatActivity() {
         }
 
         multi_2.setOnClickListener {
-            val toast = Toast.makeText(this,"What a progress ! Time to *multiply* the fun! ",Toast.LENGTH_SHORT)
+            val toast = Toast.makeText(this,"W!!!!!!!!! ",Toast.LENGTH_SHORT)
             toast.show()
             //activity change logic
-            val intent_multi_2 = Intent(this, Multiplication ::class.java)
-            startActivity(intent_multi_2)
+            val intent_multi_1 = Intent(this, Multiplication ::class.java)
+            startActivity(intent_multi_1)
         }
 
 
@@ -104,6 +119,7 @@ class MainActivity : AppCompatActivity() {
             val prctc = Intent(this, random_practice ::class.java)
             startActivity(prctc)
         }
+
 
 
     }
