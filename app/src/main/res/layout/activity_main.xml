@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/multiplication"
+            android:layout_width="126dp"
+            android:layout_height="79dp"
+            android:layout_marginTop="116dp"
+            app:layout_constraintEnd_toEndOf="@+id/addition"
+            app:layout_constraintHorizontal_bias="0.649"
+            app:layout_constraintStart_toStartOf="@+id/addition"
+            app:layout_constraintTop_toBottomOf="@+id/addition"
+            app:srcCompat="@drawable/multiplication_sign"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/addition"
+            android:layout_width="125dp"
+            android:layout_height="111dp"
+            android:layout_marginTop="84dp"
+            app:layout_constraintEnd_toStartOf="@+id/subtraction"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/addition" />
+
+        <ImageView
+            android:id="@+id/division"
+            android:layout_width="125dp"
+            android:layout_height="81dp"
+            android:layout_marginTop="144dp"
+            app:layout_constraintEnd_toEndOf="@+id/subtraction"
+            app:layout_constraintHorizontal_bias="0.111"
+            app:layout_constraintStart_toStartOf="@+id/subtraction"
+            app:layout_constraintTop_toBottomOf="@+id/subtraction"
+            app:srcCompat="@drawable/division"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/subtraction"
+            android:layout_width="121dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="92dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/minus" />
+
+        <Button
+            android:id="@+id/addi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Addition"
+            app:layout_constraintBottom_toTopOf="@+id/multiplication"
+            app:layout_constraintEnd_toEndOf="@+id/addition"
+            app:layout_constraintStart_toStartOf="@+id/addition"
+            app:layout_constraintTop_toBottomOf="@+id/addition"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/subtrac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="Subtraction"
+            app:layout_constraintBottom_toTopOf="@+id/division"
+            app:layout_constraintEnd_toEndOf="@+id/subtraction"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/subtraction"
+            app:layout_constraintTop_toBottomOf="@+id/subtraction"
+            app:layout_constraintVertical_bias="0.21" />
+
+        <Button
+            android:id="@+id/multi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Multiplication"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/multiplication"
+            app:layout_constraintStart_toStartOf="@+id/multiplication"
+            app:layout_constraintTop_toBottomOf="@+id/multiplication"
+            app:layout_constraintVertical_bias="0.007" />
+
+        <Button
+            android:id="@+id/divi"
+            android:layout_width="121dp"
+            android:layout_height="48dp"
+            android:text="Division"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/division"
+            app:layout_constraintHorizontal_bias="0.84"
+            app:layout_constraintStart_toStartOf="@+id/division"
+            app:layout_constraintTop_toBottomOf="@+id/division"
+            app:layout_constraintVertical_bias="0.017" />
+
+        <Button
+            android:id="@+id/practice"
+            android:layout_width="169dp"
+            android:layout_height="48dp"
+            android:text="practice"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageView3"
+            app:layout_constraintHorizontal_bias="0.194"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="168dp"
+            android:layout_height="128dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="@+id/multiplication"
+            app:layout_constraintStart_toStartOf="@+id/multiplication"
+            app:layout_constraintTop_toBottomOf="@+id/multi"
+            app:srcCompat="@drawable/practice" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>
